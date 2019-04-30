@@ -4,4 +4,15 @@
   <artifactId>book-ttdbyexample</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>TddByExampleApp</name>
+  
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <type>jar</type>
+      <scope>test</scope>
+      <optional>true</optional>
+    </dependency>
+  </dependencies>
 </project>
