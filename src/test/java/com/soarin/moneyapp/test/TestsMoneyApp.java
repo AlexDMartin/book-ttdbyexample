@@ -1,8 +1,8 @@
 package com.soarin.moneyapp.test;
 
-import static org.junit.Assert.*;
-import com.soarin.moneyapp.currencies.Dollar;
-import com.soarin.moneyapp.currencies.Franc;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 import com.soarin.moneyapp.currencies.Money;
 import org.junit.Test;
 
@@ -29,6 +29,12 @@ public class TestsMoneyApp {
     Money five = Money.franc(5);
     assertEquals(Money.franc(10), five.times(2));
     assertEquals(Money.franc(15), five.times(3));
+  }
+  
+  @Test
+  public void testCurrency() {
+    assertEquals("USD", Money.dollar(1).currency());
+    assertEquals("CHF", Money.franc(1).currency());
   }
 
 }
